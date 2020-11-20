@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Project_Roulette.DataSets;
+using Project_Roulette.Utilities;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +27,8 @@ namespace Project_Roulette
         public MainPage()
         {
             this.InitializeComponent();
+            Core.Initialize();
+            Core.Roll();
         }
     }
 }
