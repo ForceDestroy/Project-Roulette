@@ -12,6 +12,7 @@ namespace Project_Roulette.DataSets
         public string nameEng { get; set; }
         public string type1 { get; set; }
         public string type2 { get; set; }
+        public string sprite { get; set; }
 
         public Pokemon()
         {
@@ -19,14 +20,16 @@ namespace Project_Roulette.DataSets
             this.nameEng = null;
             this.type1 = null;
             this.type2 = null;
+            this.sprite = null;
         }
 
-        public Pokemon(int id, string nameEng, string type1, string type2)
+        public Pokemon(int id, string nameEng, string type1, string type2, string sprite)
         {
             this.id = id;
             this.nameEng = nameEng;
             this.type1 = type1;
             this.type2 = type2;
+            this.sprite = sprite;
         }
     }
 }

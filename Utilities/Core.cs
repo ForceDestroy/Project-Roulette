@@ -38,6 +38,7 @@ namespace Project_Roulette.Utilities
                     aPokemon.nameEng = childItems[0].InnerText;
                     aPokemon.type1 = childItems[1].InnerText;
                     aPokemon.type2 = childItems[2].Name == "type" ? childItems[2].InnerText : null;
+                    aPokemon.sprite = Path.Combine(Package.Current.InstalledLocation.Path, "Assets\\" + aPokemon.id + ".gif");
 
                     pokemon.Add(aPokemon);
                 }
@@ -56,9 +57,16 @@ namespace Project_Roulette.Utilities
 
             for (int i = 0; i < 6; i++)
             {
-                int result = rdm.Next(1, 494);
+                int result = rdm.Next(1, 493);
 
-                roulette.Add(pokemon[result]);
+                if (!roulette.Contains(pokemon[result]))
+                {
+                    roulette.Add(pokemon[result]);
+                }
+                else
+                {
+                    i--;
+                }   
             }
         }
     }

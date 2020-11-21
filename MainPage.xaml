@@ -8,7 +8,37 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <
-    </Grid>
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Image Height="250" Width="250" Margin="0,0,500,300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon0" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<Image Height="250" Width="250" Margin="0,0,500,-300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon1" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<Image Height="250" Width="250" Margin="0,0,0,300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon2" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<Image Height="250" Width="250" Margin="0,0,0,-300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon3" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<Image Height="250" Width="250" Margin="0,0,-500,300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon4" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<Image Height="250" Width="250" Margin="0,0,-500,-300">
+			<Image.Source>
+				<BitmapImage x:Name="Pokemon5" UriSource=""/>
+			</Image.Source>
+		</Image>
+		<AppBarButton x:Name="refreshButton" Icon="Play" Click="playButton_Click"/>
+	</Grid>
 </Page>
